@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
@@ -9,8 +9,10 @@
     --purple: rgb(110, 37, 148);
     --yellow: #ecd444;
     --white: white;
+    --linear-gradient1: rgba(110 37 148 / .8);
+
     --text: #444;
-    --transition: 0.3s ease;
+    --transition: 0.4s ease;
 }
 
 *,
@@ -22,7 +24,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Karla', sans-serif;
     line-height: 1.6;
     color: var(--text);
     font-size: 16px;
@@ -34,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserart', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     margin: 0;
 }
@@ -58,11 +60,11 @@ button {
     margin-top: 20px;
     font-size: 1.2rem;
     text-transform: uppercase;
+    transition: var(--transition);
 }
 
 button:hover {
     cursor: pointer;
-    transition: var(--transition);
 }
 
 /********************* 
@@ -104,18 +106,15 @@ nav i:hover {
 header
 **********************/
 header {
-    background-image: linear-gradient(rgba(110,
-        37,
-        148,.8), rgba(110,
-            37,
-            148, 0.8)), url(img/header.webp);
+    background-image: linear-gradient(var(--linear-gradient1), var(--linear-gradient1)), url(img/header.webp);
     padding: 200px;
     background-position: center;
     background-size: cover;
     color: var(--white);
+    text-align: center;
 }
 
-header h1{
+header h1 {
     font-size: 4rem;
     letter-spacing: 2px;
 }
@@ -126,16 +125,46 @@ header h1::after {
     height: 4px;
     width: 80px;
     background: var(--yellow);
-    margin: 30px 0 40px 0;
+    margin: 30px auto 40px auto;
 }
 
-header h4{
+header h4 {
     font-size: 1.4rem;
+}
+
+header button {
+    background: var(--white);
+    color: var(--purple);
+}
+
+header button:hover {
+    background: var(--yellow);
 }
 
 /********************* 
 about
 **********************/
+.about {
+    color: var(--white);
+}
+
+.about article {
+    width: 50%;
+    float: left;
+    padding: 60px;
+}
+
+.about i {
+    color: var(--yellow);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about h2,
+.about p {
+    margin-bottom: 20px;
+}
+
 /********************* 
 products
 **********************/

@@ -12,7 +12,7 @@
     --linear-gradient1: rgba(110 37 148 / .8);
 
     --text: #444;
-    --transition: 0.4s ease;
+    --transition: 1s ease;
 }
 
 *,
@@ -163,6 +163,18 @@ about
 .about h2,
 .about p {
     margin-bottom: 20px;
+}
+
+.about button{
+    background: transparent;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+    transition: var(--transition);
+}
+
+.about button:hover{
+    background: var(--yellow);
+    color: var(--purple);
 }
 
 /********************* 

@@ -6,7 +6,7 @@
     --gray2: #4e5062;
     --gray3: #4b4d5e;
     --gray4: #484a5a;
-    --purple: #6e2594;
+    --purple: rgb(110, 37, 148);
     --yellow: #ecd444;
     --white: white;
     --text: #444;
@@ -47,11 +47,24 @@ a {
     text-decoration: none;
 }
 
-
-img{
+img {
     display: block;
     width: 100%;
 }
+
+button {
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
 /********************* 
 nav
 **********************/
@@ -90,6 +103,36 @@ nav i:hover {
 /********************* 
 header
 **********************/
+header {
+    background-image: linear-gradient(rgba(110,
+        37,
+        148,.8), rgba(110,
+            37,
+            148, 0.8)), url(img/header.webp);
+    padding: 200px;
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+}
+
+header h1{
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+header h1::after {
+    display: block;
+    content: '';
+    height: 4px;
+    width: 80px;
+    background: var(--yellow);
+    margin: 30px 0 40px 0;
+}
+
+header h4{
+    font-size: 1.4rem;
+}
+
 /********************* 
 about
 **********************/

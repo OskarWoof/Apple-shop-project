@@ -23,11 +23,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Karla', sans-serif;
     line-height: 1.6;
     color: var(--text);
     font-size: 16px;
+    font-family: 'Karla', sans-serif;
 }
 
 h1,
@@ -49,11 +53,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    display: block;
-    width: 100%;
-}
-
 button {
     border: none;
     padding: 15px 30px;
@@ -70,7 +69,7 @@ button:hover {
 /********************* 
 helper class
 **********************/
-.clearfix::after{
+.clearfix::after {
     display: block;
     content: '';
     clear: both;
@@ -190,7 +189,7 @@ about
 /********************* 
 products
 **********************/
-.products article{
+.products article {
     border-bottom: 1px solid lightgray;
 }
 
@@ -265,7 +264,7 @@ cta
     text-align: center;
 }
 
-.cta h2{
+.cta h2 {
     font-size: 3rem;
 }
 
@@ -287,6 +286,66 @@ cta
 .cta button:hover {
     background: var(--text);
 }
+
 /********************* 
 footer
+**********************/
+footer {
+    background: var(--text);
+    padding: 60px;
+    color: var(--white);
+}
+
+footer h3 {
+    font-size: 1.4rem;
+}
+
+footer h3::after {
+    display: block;
+    content: '';
+    height: 4px;
+    width: 80px;
+    background: var(--yellow);
+    margin: 20px 0;
+}
+
+footer article:nth-child(1) {
+    width: 60%;
+    float: left;
+}
+
+footer article:nth-child(2) {
+    width: 40%;
+    float: right;
+}
+
+footer button {
+    background: transparent;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+    transition: var(--transition);
+}
+
+footer button:hover {
+    background: var(--yellow);
+    color: var(--purple);
+}
+
+footer ul li {
+    line-height: 2;
+}
+
+footer ul li a {
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+/********************* 
+RESPONSIVE
 **********************/

@@ -341,11 +341,86 @@ footer ul li a {
 
 
 
-
-
-
-
-
 /********************* 
 RESPONSIVE
 **********************/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .products .row1 article:nth-child(2) {
+        padding: 20%;
+    }
+
+    .products .row2 article:nth-child(1) {
+        padding: 20%;
+    }
+
+    .products .row3 article:nth-child(2) {
+        padding: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li a {
+        margin: 5px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header {
+        padding: 50px;
+    }
+
+    header h4 {
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+
+    .about article {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .products .row1 article:nth-child(1),
+    .products .row3 article:nth-child(1) {
+        display: none;
+    }
+
+    .products .row1 article:nth-child(2),
+    .products .row3 article:nth-child(2) {
+        width: 100%;
+    }
+
+    .products .row2 article:nth-child(2) {
+        display: none;
+    }
+
+    .products .row2 article:nth-child(1) {
+        width: 100%;
+    }
+
+    .cta h2 {
+        font-size: 2rem;
+    }
+
+    .cta {
+        padding: 40px;
+    }
+
+    .cta button {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+    footer article:nth-child(1) {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    footer article:nth-child(2) {
+        width: 100%;
+    }
+}
